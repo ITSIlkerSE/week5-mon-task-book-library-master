@@ -1,0 +1,22 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.inputButtons{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    text-align: start;
+
+}
+
+
+
+.inputButtons__button-last{
+    align-self: flex-end;
+}

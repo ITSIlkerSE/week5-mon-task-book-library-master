@@ -1,5 +1,7 @@
 import {Book} from "../model/Book";
 import Books from "./Books";
+import './BooksLib.css';
+
 
 
 
@@ -14,7 +16,7 @@ type BooksLibProps = {
 export default function BooksLib(props: BooksLibProps){
 
     return(
-    <div>
+    <div className={"BookContainer"}>
         {props.books.map((book )=>
         <Books book={book} deleteBook={props.deleteBook}/>)}
 

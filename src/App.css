@@ -1,6 +1,14 @@
+
+video{
+  object-fit: cover;
+}
+
+
+
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -14,18 +22,38 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  gap: 1em;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.animated-background{
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 100%;
+  top: 0;
+  z-index: -1;
+
+
+}
+
+.animated-background video{
+  height: inherit;
+  width: inherit;
+
+
+
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +63,6 @@
   to {
     transform: rotate(360deg);
   }
+
+
 }

@@ -2,6 +2,7 @@ import {ChangeEvent, useState} from "react";
 import {Book} from "../model/Book";
 import BooksLib from "./BooksLib";
 import Books from "./Books";
+import './AddBook.css';
 
 type addBookProps = {
     addBook : (book: Book) => void
@@ -39,11 +40,28 @@ const [author, setAuthor] = useState("")
     }
 
     return(
-        <div>
-            <input onChange={onIsbnChange} value={isbn} />
-            <input onChange={onTitleChange} value={title} />
-            <input onChange={onAuthorChange} value={author} />
-            <button onClick={() => onAddBook()}>Add Book</button>
+        <div className={"inputButtons"}>
+            <div>
+                <p>ISBN:</p>
+                <input onChange={onIsbnChange} value={isbn} />
+            </div>
+
+            <div>
+                <p>Title:</p>
+                <input onChange={onTitleChange} value={title} />
+
+            </div>
+
+            <div>
+                <p>Author:</p>
+                <input onChange={onAuthorChange} value={author} />
+            </div>
+            <div  className={"inputButtons__button-last"}>
+                <p> </p>
+                <button onClick={() => onAddBook()}>Add Book</button>
+
+            </div>
+
 
         </div>
 

@@ -35,14 +35,28 @@ function App() {
 
     return (
 
-
+<body>
         <div className="App">
+
+
             <header className="App-header">
                 <h1>Ilkers Library</h1>
                 <BooksLib books={books} deleteBook={deleteBook}/>
                 <AddBook addBook={addBook} />
             </header>
+
+            <div className="animated-background">
+                <video autoPlay muted loop>
+                    <source
+                        src={"https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/504400/2b0792025824dfe8a1aa161ebe74ddee128d39cd.mp4"}
+                        type={"video/mp4"}/>
+
+                </video>
+
+            </div>
+
         </div>
+</body>
     );
 }
 

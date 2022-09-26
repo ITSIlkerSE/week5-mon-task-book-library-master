@@ -1,4 +1,5 @@
 import {Book} from "../model/Book";
+import './Books.css';
 
 
 type BooksProps = {
@@ -11,8 +12,13 @@ export default function Books(props: BooksProps){
     return (
 
         <div className={"Book"}>
+
+            <p>ISBN: [{props.book.isbn}] </p>
+            <p>Title: {props.book.title} </p>
+            <p>Author :{props.book.author}</p>
+
+
             <button onClick={() => props.deleteBook(props.book.isbn)}>Delete</button>
-            <p>ISBN: [{props.book.isbn}] Titel ist: {props.book.title} Author :{props.book.author} </p>
 
 
         </div>
