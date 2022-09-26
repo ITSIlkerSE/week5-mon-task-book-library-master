@@ -1,9 +1,33 @@
 
+input{
+  text-align: center;
+}
+
+svg{
+  position: relative;
+  fill: #704513;
+}
 video{
   object-fit: cover;
 }
+.Box{
+  position: absolute;
+  border-radius: 2px;
+  left: 13px;
+  top: 10px;
+  content: " ";
+  background-color: whitesmoke;
+  width: 76.3px;
+  height:89.5px;
 
-
+}
+.App-header__title{
+  font-size: 1rem;
+  color: white;
+  display: flex;
+gap: 1em;
+  position: relative;
+}
 
 .App {
   text-align: center;

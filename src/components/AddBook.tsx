@@ -43,18 +43,18 @@ const [author, setAuthor] = useState("")
         <div className={"inputButtons"}>
             <div>
                 <p>ISBN:</p>
-                <input onChange={onIsbnChange} value={isbn} />
+                <input placeholder={"type in ISBN"} onChange={onIsbnChange} value={isbn} />
             </div>
 
             <div>
                 <p>Title:</p>
-                <input onChange={onTitleChange} value={title} />
+                <input placeholder={"type in Title"} onChange={onTitleChange} value={title} />
 
             </div>
 
             <div>
                 <p>Author:</p>
-                <input onChange={onAuthorChange} value={author} />
+                <input placeholder={"type in Author"} onChange={onAuthorChange} value={author} />
             </div>
             <div  className={"inputButtons__button-last"}>
                 <p> </p>

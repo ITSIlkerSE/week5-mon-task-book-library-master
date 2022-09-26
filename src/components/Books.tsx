@@ -5,25 +5,41 @@ import './Books.css';
 type BooksProps = {
     book: Book;
     deleteBook: (isbn: string) => void;
+
 }
+
 
 export default function Books(props: BooksProps){
 
+
+
+
+
     return (
 
-        <div className={"Book"}>
+        <div className={"Book popUp"}>
 
-            <p>ISBN: [{props.book.isbn}] </p>
-            <p>Title: {props.book.title} </p>
-            <p>Author :{props.book.author}</p>
+            <p>[{props.book.isbn}] </p>
+            <hr/>
+
+            <p>{props.book.title} </p>
+            <hr/>
+
+            <p><em>{props.book.author}</em></p>
+            <hr/>
 
 
-            <button onClick={() => props.deleteBook(props.book.isbn)}>Delete</button>
+            <button id={"button-delete"} onClick={() =>
+            {
+                props.deleteBook(props.book.isbn);
+                }}>Delete</button>
 
 
         </div>
 
 
     )
+
+
 
 }
